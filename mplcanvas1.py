@@ -19,6 +19,8 @@ class MplCanvas1(FigureCanvasQTAgg):
         color = (r, g, b)
     
         self.ax.plot([x1, x2],[y1,y2], c = color)
+        self.ax.text(x1, y1, '1')
+        self.ax.text(x2, y2, '2')
         self.draw()
 
     def rysuj_2(self, x1, x2, x3, y1, y2, y3):
@@ -28,6 +30,9 @@ class MplCanvas1(FigureCanvasQTAgg):
         color = (r, g, b)
     
         self.ax.plot([x1,x2,x3,x1],[y1,y2,y3,y1], c = color)
+        self.ax.text(x1, y1, '1')
+        self.ax.text(x2, y2, '2')
+        self.ax.text(x3, y3, '3')
         self.draw()
 
         
@@ -40,7 +45,7 @@ class MplCanvas1(FigureCanvasQTAgg):
         a = self.ax
         a.clear()
         self.draw()
-
+'''
 def rgb2gray(im):   
         r = im[:,:,0]
         g = im[:,:,1]
@@ -48,3 +53,4 @@ def rgb2gray(im):
         gray = 0.2989 * r + 0.5870 * g + 0.1140 * b
 
         return gray
+'''
